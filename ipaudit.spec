@@ -8,7 +8,6 @@ Group:          Networking/Other
 URL:            http://ipaudit.sourceforge.net/
 Source0:        http://superb-east.dl.sourceforge.net/sourceforge/ipaudit/ipaudit-1.0BETA2.tar.gz
 BuildRequires:  libpcap-devel
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 A neat packet logging program and auditor. Provides dump capability
