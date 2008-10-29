@@ -1,6 +1,6 @@
 Name:           ipaudit
 Version:        1.0
-Release:        %mkrel 0.beta2.3
+Release:        %mkrel 0.beta2.4
 Epoch:          0
 Summary:        Network Package Audit and Capture
 License:        GPL
@@ -8,7 +8,7 @@ Group:          Networking/Other
 URL:            http://ipaudit.sourceforge.net/
 Source0:        http://superb-east.dl.sourceforge.net/sourceforge/ipaudit/ipaudit-1.0BETA2.tar.gz
 BuildRequires:  libpcap-devel
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 A neat packet logging program and auditor. Provides dump capability
