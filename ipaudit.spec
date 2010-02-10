@@ -1,12 +1,12 @@
 Name:           ipaudit
-Version:        1.0
-Release:        %mkrel 0.beta2.5
+Version:        1.0rc9
+Release:        %mkrel 1
 Epoch:          0
 Summary:        Network Package Audit and Capture
-License:        GPL
+License:        GPLv2
 Group:          Networking/Other
-URL:            http://ipaudit.sourceforge.net/
-Source0:        http://superb-east.dl.sourceforge.net/sourceforge/ipaudit/ipaudit-1.0BETA2.tar.gz
+URL:            http://%{name}.sourceforge.net/
+Source0:        http://superb-east.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.gz
 BuildRequires:  libpcap-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -16,15 +16,15 @@ and various  levels of logging.
 
 
 %prep
-%setup -q  -n %{name}-%{version}BETA2
+%setup -q  -n %{name}-%{version}
 
 %build
-%{configure2_5x}
-%{make}
+%configure2_5x
+%make
 
 %install
 %{__rm} -rf %{buildroot}
-%{makeinstall}
+%makeinstall
 
 %clean
 %{__rm} -rf %{buildroot}
@@ -35,6 +35,6 @@ and various  levels of logging.
 %attr(0755,root,root) %{_bindir}/total
 %attr(0755,root,root) %{_sbindir}/ipaudit
 %attr(0755,root,root) %{_sbindir}/ipstrings
-%{_mandir}/man1/ipaudit.1*
-%{_mandir}/man1/ipstrings.1*
-%{_mandir}/man1/total.1*
+%{_mandir}/man8/ipaudit.8.*
+%{_mandir}/man8/ipstrings.8.*
+%{_mandir}/man1/total.1.*
