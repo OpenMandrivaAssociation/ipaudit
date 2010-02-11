@@ -1,6 +1,8 @@
+%define rc 9
+
 Name:           ipaudit
-Version:        1.0rc9
-Release:        %mkrel 1
+Version:        1.0
+Release:        %mkrel 0.rc%{rc}.1
 Epoch:          0
 Summary:        Network Package Audit and Capture
 License:        GPLv2
