@@ -1,14 +1,14 @@
-%define rc 9
+%define rcversion 9
 
 Name:           ipaudit
 Version:        1.0
-Release:        %mkrel 0.rc%{rc}.1
+Release:        %mkrel 0.rc%{rcversion}.1
 Epoch:          0
 Summary:        Network Package Audit and Capture
 License:        GPLv2
 Group:          Networking/Other
 URL:            http://%{name}.sourceforge.net/
-Source0:        http://superb-east.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.gz
+Source0:        http://superb-east.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}rc%{rcversion}.tar.gz
 BuildRequires:  libpcap-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -18,7 +18,7 @@ and various  levels of logging.
 
 
 %prep
-%setup -q  -n %{name}-%{version}
+%setup -q -n %{name}-%{version}rc%{rcversion}
 
 %build
 %configure2_5x
