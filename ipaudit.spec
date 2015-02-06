@@ -1,6 +1,6 @@
 Name:           ipaudit
 Version:        1.0rc9
-Release:        %mkrel 1
+Release:        2
 Epoch:          0
 Summary:        Network Package Audit and Capture
 License:        GPLv2
