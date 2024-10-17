@@ -5,7 +5,7 @@ Epoch:          0
 Summary:        Network Package Audit and Capture
 License:        GPLv2
 Group:          Networking/Other
-URL:            http://%{name}.sourceforge.net/
+URL:            https://%{name}.sourceforge.net/
 Source0:        http://superb-east.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.gz
 BuildRequires:  libpcap-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
